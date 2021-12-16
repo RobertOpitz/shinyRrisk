@@ -1,0 +1,107 @@
+#shiny-tab-setup .box-body { min-height: 16rem !important; }
+
+#tbl_items table { margin: 0 auto; }
+
+.skin-blue .main-header .logo {
+    background-color: #244aa5;
+    font-weight: bold;
+    color: #f5f5f5 !important;
+}
+
+/* header */
+.skin-blue .main-header .logo:hover { background-color: #244aa5; }
+.skin-blue .main-header .navbar .sidebar-toggle:hover { background-color: #244aa5; }
+.skin-blue .main-header .navbar { background-color: #3866d4; }
+
+/* sidebar */
+.sidebar-menu li a { color: #317eac !important; }
+
+/* body */
+.box-body { background-color: #f5f5f5; }
+
+.box.box-solid.box-primary .box-header {
+  background-color: #3866d4 ;
+  color: #f5f5f5;
+}
+
+.box.box-solid.box-primary {
+  border-bottom-color:#3866d4;
+  border-left-color:#3866d4;
+  border-right-color:#3866d4;
+  border-top-color:#3866d4;
+}
+
+.btn { background-color: #f5f5f5; }
+.content-wrapper { background-color: #ffffff; }
+.content { background-color: #ffffff; }
+
+#setup-btnDemoModel1, #setup-btnDemoModel2 {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-right: 1px;
+  margin-left: 1px;
+}
+
+.fa.fa-angle-left.pull-right { display: none !important; }
+
+.dataTable tr td:last-child { text-align: right !important; }
+
+/* item modal */
+#items-pltEmpTheor, #items-pltQq, #items-pltCdf2, #items-pltPp { height: 200px !important; }
+#items-labResultMatrix table { font-size: 8px; }
+
+.rejected { color: red; }
+.not-rejected { color: green; }
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.center-full-width, #setup-labActiveModelName {
+  width: 100%;
+  text-align: center;
+}
+
+/* shiny alert */
+.sweet-alert {
+  background-color: #f5f5f5;
+}
+
+.sweet-alert h2 {
+  font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 400;
+}
+
+.sweet-alert .sa-icon::before, .sweet-alert .sa-icon::after, .sweet-alert .sa-fix {
+  background: none !important;
+}
+
+.sweet-alert .confirm, .sweet-alert .confirm:hover {
+  color: #444;
+  border: 1px solid #8c8c8c;
+  font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sweet-alert .confirm {
+  background-color: #f5f5f5 !important;
+  border-color: #8c8c8c !important;
+}
+
+.sweet-alert .confirm:hover {
+  background-color: #e6e6e6 !important;
+  border-color: #adadad !important;
+}
+
+/* save icon */
+.border-none { border: none; }
+
+#header-btnModelSave { background-color: #3866d4 !important; }
+
+/* hacking */
+.icon-none .sa-success { display: none !important; }
+#shiny-tab-scoring .shiny-input-container { width: 100% !important; }
+
+.d-none { display: none; }

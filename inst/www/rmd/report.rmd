@@ -1,0 +1,121 @@
+---
+title: '`r params$model@name@name`'
+# author: ""
+date: '`r format(Sys.Date(),"%Y-%B-%d")`'
+output: word_document
+params:
+  model: NA
+  plotCdf: NA
+  plotTornado: NA
+  plotHistogram: NA
+  plotConvergence: NA
+  plotUncertainties1: NA
+  plotUncertainties2: NA
+  plotUncertainties3: NA
+---
+
+\newpage
+
+# Documentation
+
+## Reference to the main document
+
+`r params$model@basics@basics[[1]]@explanation`
+
+## Background
+
+`r params$model@basics@basics[[2]]@explanation`
+
+## Objectives
+
+`r params$model@basics@basics[[3]]@explanation`
+
+## Scope
+
+`r params$model@basics@basics[[4]]@explanation`
+
+## Description
+
+`r params$model@basics@basics[[5]]@explanation`
+
+\newpage
+
+# Authors
+```{r authors, echo = FALSE}
+#params$model@authors@authors
+author_list <- NULL
+for (author in params$model@authors@authors) {
+  author_list <- paste(author_list, 
+                       "Name:        ", author@name, "  \n", 
+                       "Institution: ", author@institution, "  \n", 
+                       "E-Mail:      ", author@email, "  \n\n")
+}
+```
+
+`r author_list`
+
+\newpage
+
+# Definitions
+```{r items, echo = FALSE}
+params$model@items@items
+```
+
+\newpage
+
+# Results
+
+## Summary
+```{r summary, echo = FALSE}
+params$model@output@summaries
+```
+
+\newpage
+
+## Plot CDF
+```{r cdf, echo = FALSE, fig.cap = "CDF", out.width = "100%", fig.align = "center"}
+if (file.exists(params$plotCdf))
+  knitr::include_graphics(params$plotCdf)
+```
+
+\newpage
+
+## Plot Tornado
+```{r tornado, echo = FALSE, fig.cap = "Tornado", out.width = "100%", fig.align = "center"}
+if (file.exists(params$plotTornado))
+  knitr::include_graphics(params$plotTornado)
+```
+
+\newpage
+
+## Plot Histogram
+```{r histogram, echo = FALSE, fig.cap = "Histogram", out.width = "100%", fig.align = "center"}
+if (file.exists(params$plotHistogram))
+  knitr::include_graphics(params$plotHistogram)
+```
+
+\newpage
+
+## Plot Convergence
+```{r convergence, echo = FALSE, fig.cap = "Convergence", out.width = "100%", fig.align = "center"}
+if (file.exists(params$plotConvergence))
+  knitr::include_graphics(params$plotConvergence)
+```
+
+\newpage
+
+## Plot Uncertainties
+```{r uncertainties1, echo = FALSE, fig.cap = "Uncertainties", out.width = "100%", fig.align = "center"}
+if (file.exists(params$plotUncertainties1))
+  knitr::include_graphics(params$plotUncertainties1)
+```
+
+```{r uncertainties2, echo = FALSE, fig.cap = "Uncertainties", out.width = "100%", fig.align = "center"}
+if (file.exists(params$plotUncertainties2))
+  knitr::include_graphics(params$plotUncertainties2)
+```
+
+```{r uncertainties3, echo = FALSE, fig.cap = "Uncertainties", out.width = "100%", fig.align = "center"}
+if (file.exists(params$plotUncertainties3))
+  knitr::include_graphics(params$plotUncertainties3)
+```
