@@ -1,2 +1,8 @@
 # shinyRrisk
-App for stochastic, quatitative risk assesmment using R and Shiny.
+App for stochastic, quantitative risk assesmment using R and Shiny.
+
+## Download
+
+## Starting shinyRrsik from command line
+
+## Starting shinyRrsik with RStudio
