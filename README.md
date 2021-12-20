@@ -33,15 +33,18 @@ Next you need to set the shinyRrsik directory as the working directory. You can 
 
 ![RStudio_browse_to_directory_painted_open_click_on_more](https://user-images.githubusercontent.com/52924688/146752123-d7b7ccdf-6bf0-457f-9574-6a740080d50f.png)
 
-Then select the entry `Set as working directory`.
+Then select the entry `Set As Working Directory`.
 
 ![RStudio_browse_to_directory_set_working_directory](https://user-images.githubusercontent.com/52924688/146752646-99a20f97-3217-4b40-9e0e-e5148a18b37e.png)
 
- you can set it also in the R console
+ You can set it also in the R console with `setwd`.
+ 
 ![RStudio_browse_to_directory_set_working_directory_2](https://user-images.githubusercontent.com/52924688/146752162-569cdfbd-f4fc-4ebc-94f6-571ce2500f6d.png)
 
-click on shinyRrisk.R to load the script
+Click on shinyRrisk.R to load the script.
+
 ![RStudio_browse_to_directory_painted_open_shinyRrisk](https://user-images.githubusercontent.com/52924688/146752418-8a08369a-3cd6-44a7-82ca-9c488a73fec6.png)
 
-start app
+Start the App.
+
 ![RStudio_browse_to_directory](https://user-images.githubusercontent.com/52924688/146752053-3dd334dd-81f8-47a8-a974-481d604fd35f.PNG)
