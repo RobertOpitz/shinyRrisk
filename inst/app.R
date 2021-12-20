@@ -1,33 +1,33 @@
-dynamic_require <- function(package){
-  if (eval(parse(text = paste("require(",package,")")))) 
-    return(TRUE)
-  
-  install.packages(package)
-  return(eval(parse(text = paste("require(",package,")"))))
-}
-
-get_libraries <- function(packages) {
-  for (package in packages)
-    if (!dynamic_require(package)) 
-      install.packages(package)
-}
-
-get_libraries(c("DT",
-                "fitdistrplus",
-                "mc2d",
-                "network",
-                "networkD3",
-                "plotly",
-                "rmarkdown", "knitr",
-                "RJSONIO",
-                "shiny",
-                "shinyalert",
-                "shinycssloaders",
-                "shinydashboard",
-                "shinyFeedback",
-                "shinyjs",
-                "parallel", 
-                "mgcv"))
+# dynamic_require <- function(package){
+#   if (eval(parse(text = paste("require(",package,")")))) 
+#     return(TRUE)
+#   
+#   install.packages(package)
+#   return(eval(parse(text = paste("require(",package,")"))))
+# }
+# 
+# get_libraries <- function(packages) {
+#   for (package in packages)
+#     if (!dynamic_require(package)) 
+#       install.packages(package)
+# }
+# 
+# get_libraries(c("DT",
+#                 "fitdistrplus",
+#                 "mc2d",
+#                 "network",
+#                 "networkD3",
+#                 "plotly",
+#                 "rmarkdown", "knitr",
+#                 "RJSONIO",
+#                 "shiny",
+#                 "shinyalert",
+#                 "shinycssloaders",
+#                 "shinydashboard",
+#                 "shinyFeedback",
+#                 "shinyjs",
+#                 "parallel", 
+#                 "mgcv"))
 
 # if (!require("DT")) install.packages("DT")
 # #library(DT)
