@@ -20,7 +20,7 @@ You may start shinyRrisk from the command line using the program `Rscript` that 
 ```console
 Rscript shinyRrisk.R
 ```
-If your R does not have all of the necessary packages needed for shinyRrisk, they will be downloaded and installed by shinyRrisk. You may call `shinyRrisk.R` twice using `Rscript`. 
+If your R does not have all of the necessary packages needed for shinyRrisk, they will be downloaded and installed by shinyRrisk. Tehn, you may call `shinyRrisk.R` twice using `Rscript`. 
 
 
 ## Starting shinyRrisk with RStudio
