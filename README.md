@@ -1,29 +1,37 @@
 # shinyRrisk
 App for stochastic, quantitative risk assesmment using R and Shiny.
 
+# Download
 
-## Download
+The following describes how to download the software directly from this github page, or from the command line. 
 
-Download the project either directly from this repository, or on the command line use the following in the directory of your choice:
+## Download directly from this github page
+
+Click on `Code` to open this pull down menue.
+
+![download_shinyrrisk_step1](https://user-images.githubusercontent.com/52924688/146906248-b50a23d9-0c04-4052-a3f8-e70a8a07779f.png)
+
+Click on `Download Zip` to download shinyRrisk as a compressed .zip file.
+
+![download_shinyrrisk_step2](https://user-images.githubusercontent.com/52924688/146906252-b2cd26aa-4c71-454d-804a-c4391ea66586.png)
+
+Unzip this file in the directory of your choice.
+
+## Download from github from command line
+
+From the command line use the following in the directory of your choice:
 
 ```console
 git clone https://github.com/RobertOpitz/shinyRrisk.git
 ```
 
-If you downloaded a .zip file, unzip it, and move it to the directory of your choice.
+# Starting shinyRrisk
 
-
-## Starting shinyRrisk from command line
-
-You may start shinyRrisk from the command line using the program `Rscript` that is part of R. Go into the shinyRrisk folder, and use the following command: 
-
-```console
-Rscript shinyRrisk.R
-```
-If your R does not have all of the necessary packages needed for shinyRrisk, they will be downloaded and installed by shinyRrisk. Tehn, you may call `shinyRrisk.R` twice using `Rscript`. 
-
+The following describes how to start `shinyRrisk` from RStudio, or from the command line.
 
 ## Starting shinyRrisk with RStudio
+
+The following describes how to start `shinyRrisk` from RStudio directly. If you do not have all necessary packages for `shinyRrisk`, it may install the missing packages for you. Then, you should restart R either by choosing from the menue `Session -> Restart R`, or by closing RStudio and opening it again. 
 
  First go to the shinyRrisk directory. You can use in RStudio `...` for this.
  
@@ -48,3 +56,12 @@ Click on shinyRrisk.R to load the script.
 Start the App.
 
 ![RStudio_browse_to_directory](https://user-images.githubusercontent.com/52924688/146752053-3dd334dd-81f8-47a8-a974-481d604fd35f.PNG)
+
+## Starting shinyRrisk from command line
+
+You may start shinyRrisk from the command line using the program `Rscript` that is part of R. Go into the shinyRrisk folder, and use the following command: 
+
+```console
+Rscript shinyRrisk.R
+```
+If your R does not have all of the necessary packages needed for shinyRrisk, they will be downloaded and installed by shinyRrisk. **Then, you may call `shinyRrisk.R` twice using `Rscript`.** 
