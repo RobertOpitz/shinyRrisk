@@ -1,5 +1,5 @@
 # shinyRrisk
-App for stochastic, quantitative risk assesmment using R and Shiny.
+App for stochastic, quantitative risk assessment using R and Shiny. This app runs in your web browser.
 
 # Download
 
