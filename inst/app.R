@@ -50,9 +50,9 @@
 # # test for faster plotting of gam-plots
 # library(parallel) 
 
-nb_of_threads <- 3
-cl <- makeCluster(nb_of_threads)
-clusterEvalQ(cl = cl, library(mgcv))
+#nb_of_threads <- 3
+#cl <- makeCluster(nb_of_threads)
+#clusterEvalQ(cl = cl, library(mgcv))
 
 options(shiny.maxRequestSize = 32 * (1024^2))
 
@@ -97,7 +97,7 @@ server <- function(input, output, session) {
   session$onSessionEnded(function() {
     # dialog if the user really want to stop app
     # stop cluster
-    stopCluster(cl)
+    #stopCluster(cl)
     # stop app
     stopApp()
   })
