@@ -3,7 +3,7 @@ App for stochastic, quantitative risk assessment using R and Shiny. This app run
 
 # Download
 
-The following describes how to download the software directly from this github page, or from the command line. 
+The following describes how to download the software directly from this github page, or from the command line. Choose one of the options below to download shinyRrisk.
 
 ## Download directly from this github page
 
@@ -27,11 +27,11 @@ git clone https://github.com/RobertOpitz/shinyRrisk.git
 
 # Starting shinyRrisk
 
-The following describes how to start `shinyRrisk` from RStudio, or from the command line.
+The following describes how to start `shinyRrisk` from RStudio, or from the command line. Choose one of the two options below to start shinyRrisk.
 
 ## Starting shinyRrisk with RStudio
 
-The following describes how to start `shinyRrisk` from RStudio directly. If you do not have all necessary packages for `shinyRrisk`, it may install the missing packages for you. Then, you should restart R either by choosing from the menue `Session -> Restart R`, or by closing RStudio and opening it again. 
+The following describes how to start `shinyRrisk` from RStudio directly. If you do not have all necessary packages for `shinyRrisk`, it may install the missing packages for you.
 
  First go to the shinyRrisk directory. You can use in RStudio `...` for this.
  
