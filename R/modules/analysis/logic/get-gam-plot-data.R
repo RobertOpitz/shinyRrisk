@@ -48,7 +48,8 @@ getGAMPlotData <- function(rriskModel) {
   print("gamplot apply")
   cat("length(mcrv.unc.itmes) = ", length(mcrv.unc.items), "\n")
   this_time <- Sys.time()
-  result <- parallel::parLapply(cl = cl,
+  #result <- parallel::parLapply(cl = cl,
+  result <- lapply(
     mcrv.unc.items,
     function(item, rmo, rms, y.1d, y.2d){
       #-------------------------------------------------------------------------
