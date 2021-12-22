@@ -12,6 +12,8 @@ get_libraries <- function(packages) {
       install.packages(package, repos = "http://cran.rstudio.com")
 }
 
+get_libraries(c("shiny"))
+
 get_libraries(c("DT",
                 "fitdistrplus",
                 "mc2d",
@@ -20,17 +22,17 @@ get_libraries(c("DT",
                 "plotly",
                 "rmarkdown", "knitr",
                 "RJSONIO",
-                "shiny",
+                #"shiny",
                 "shinyalert",
                 "shinycssloaders",
                 "shinydashboard",
                 "shinyFeedback",
                 "shinyjs",
-                "parallel", 
+                #"parallel", 
                 "mgcv"))
 
 #options(warn = 2, show.error.locations = "bottom")
-shiny::runApp('./inst/app.R', 
-              port = 3838, 
-              launch.browser = TRUE,
-              display.mode = "normal")
+runApp('./inst/app.R', 
+       port = 3838, 
+       launch.browser = TRUE,
+       display.mode = "normal")
